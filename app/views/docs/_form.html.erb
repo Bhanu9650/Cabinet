@@ -1,0 +1,33 @@
+<%= simple_form_for @doc do |f| %>
+
+	<div style="margin: 10px;">
+    <p id="time-board">
+      you have taken <span><%= @doc.time_taken.to_i %></span> seconds
+    </p>
+		  <div id="start-time" class="button" style="float: right;margin-bottom: 20px;">
+		    Start Time
+		  </div>
+		  <div id="end-time" class="hidden button" style="float: right;margin-bottom: 20px;">
+		     End Time
+		  </div>
+	</div>
+
+
+  <%= f.hidden_field :time_taken, value: @doc.time_taken.to_i %>
+  <%= f.input :title %>
+  <p style="float: right; margin-bottom: 20px;">
+      <span id="time-taken"><%= f.hidden_field :time_taken %></span>
+  </p>
+
+
+  <div>
+    <%= f.input :content %>
+    <p style="margin: 0;float: right;">
+      Word count:
+      <span id="content-word-count"><%= @doc.content_word_count %></span>
+    </p>
+  </div>
+  <%= f.button :submit, id: 'doc-submit-button' %>
+  <a href="https://www.oxfordlearnersdictionaries.com/" style="margin-left: 270px" class="button">Dictonary</a>
+  <a href="https://thesaurus.yourdictionary.com/" style="margin-left: 100px" class="button">Synonyms/Antonyms</a>
+<% end %>
