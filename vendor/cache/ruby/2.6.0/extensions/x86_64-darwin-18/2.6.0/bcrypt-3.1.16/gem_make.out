@@ -1,0 +1,13 @@
+current directory: /Users/bhanugupta/rails_projects/Cabinet/vendor/cache/ruby/2.6.0/gems/bcrypt-3.1.16/ext/mri
+/Users/bhanugupta/.rvm/rubies/ruby-2.6.3/bin/ruby -I /Users/bhanugupta/.rvm/rubies/ruby-2.6.3/lib/ruby/site_ruby/2.6.0 -r ./siteconf20210616-8845-1foepoo.rb extconf.rb
+creating Makefile
+
+current directory: /Users/bhanugupta/rails_projects/Cabinet/vendor/cache/ruby/2.6.0/gems/bcrypt-3.1.16/ext/mri
+make "DESTDIR=" clean
+xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun
+
+current directory: /Users/bhanugupta/rails_projects/Cabinet/vendor/cache/ruby/2.6.0/gems/bcrypt-3.1.16/ext/mri
+make "DESTDIR="
+xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun
+
+make failed, exit code 1
